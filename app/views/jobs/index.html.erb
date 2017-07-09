@@ -1,4 +1,8 @@
+<div class="pull-right">
+  <%= link_to("Add a Job", new_job_path, :class => "btn btn-default" ) %>
+</div>
 <table class="table table-bordered">
+
   <% @jobs.each do |job| %>
   <tr>
     <td> <%= link_to(job.title, job_path(job)) %> </td>
